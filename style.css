@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-branco: #ffffff;
+    --cor-preta: #1f1f1f;
+    --cor-principal: #585858;
+    --cor-secundaria: #acacac;
+    --cor-terciaria: #d5d5d5;
+
+    --cor-link: #36cbfd;
+    --cor-link-click: #fff5e1;
+    --cor-botao: #1D24CA;
+
+    --fonte-principal: "Montserrat", sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(assets/Sem\ Título-1.png);
+    background-size: 100vw;
+    color: var(--cor-preta);
+    font-size: 1em;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: right;
+    margin: 2em;
+} .cabecalho__botao {
+    color: var(--cor-botao);
+    background-color: var(--cor-link);
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 0.2em solid var(--cor-botao);
+} .cabecalho__botao:hover {
+    scale: 1.1;
+    transition: 0.3s;
+} .cabecalho__botao:active {
+    transition: 0s;
+    color: var(--cor-link-click);
+    border: 0.2em solid var(--cor-link-click);
+    background-color: var(--cor-botao);
+}
+
+.principal {
+    margin: 3em 10em;
+    background-color: var(--cor-branco);
+    
+}
+
+.principal__container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.principal__infos {
+    background-color: var(--cor-preta);
+    color: var(--cor-branco);
+    padding: 1em;
+}
+
+.pricipal__nome {
+    color: var(--cor-secundaria);
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.principal__profissao {
+    padding-bottom: 0.7em;
+    border-bottom: 0.1em solid var(--cor-secundaria);
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.principal__texto {
+    font-size: 1em;
+    padding: 0.2em 0;
+    margin-bottom: 0.2em;
+    color: var(--cor-branco);
+}
+
+.principal__container__links {
+    text-align: center;
+    align-items: center;
+    margin: 1em 0;
+} .principal__link {
+    display: block;
+    color: var(--cor-link);
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 0.1em solid var(--cor-link);
+    border-radius: 0.7em;
+    padding: 0.2em;
+    margin: 0.5em 2em;
+} .principal__link:hover {
+    scale: 1.1;
+    transition: 0.3s;
+} .principal__link:active {
+    color: var(--cor-link-click);
+    border: 0.1em solid var(--cor-link-click);
+    border-radius: 0.7em;
+    transition: 0s;
+}
+
+.principal__lista {
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.principal__lista__titulo {
+    color: var(--cor-secundaria);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid var(--cor-secundaria);
+    width: auto;
+    margin-bottom: 0.5em;
+}
+
+.principal__lista__texto {
+    color: var(--cor-branco);
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.principal__lista__pdf {
+    color: var(--cor-link);
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 0.7em;
+    padding: 0.1em;
+}
+
+.principal__lista__info {
+    display: inline-block;
+    color: var(--cor-branco);
+    background-color: var(--cor-botao);
+    font-size: 1.2em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    margin-bottom: 1%;
+} .principal__lista__sabermais__item{
+    color: var(--cor-branco);
+    margin: 1em;
+    font-size: 0.8em;
+} .principal__lista__sabermais__item__texto{
+    margin-bottom: 0.2em;
+}
+
+.principal__lista__sabermais {
+    display: none;
+}
+
+.principal__lista__info:hover ~ .principal__lista__sabermais {
+    display: block;
+}
+
+
+
+.principal__container__exp {
+    background-color: var(--cor-branco);
+    color: var(--cor-preta);
+    padding: 1em;
+    width: auto;
+}
+
+.principal__lista__titulo_exp {
+    color: var(--cor-preta);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid var(--cor-preta);
+    width: auto;
+    margin-bottom: 0.5em;
+}
+
+.principal__texto__exp {
+    font-size: 1em;
+    padding: 0.2em 0;
+    margin-bottom: 0.2em;
+    color: var(--cor-preta);
+    margin-right: 2em;
+}
+.principal__lista__subtitulo {
+    font-size: 1.3em;
+    padding: 0.2em 0;
+    margin-bottom: 0.2em;
+    color: var(--cor-preta);
+    margin-right: 2em;
+    font-weight: bolder;
+} .principal__lista__cargo {
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.principal__lista__sabermais__item-exp{
+    color: var(--cor-preta);
+    margin: 1em;
+    font-size: 0.8em;
+    font-weight: 400;
+} .principal__lista__sabermais__item__texto-exp{
+    margin-bottom: 0.2em;
+}
+
+.resp {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .principal {
+        margin: 3em;
+        background-color: var(--cor-branco);
+    }
+    .principal__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .resp,.respo{
+        display: block;
+        background-color: var(--cor-branco);
+        color: var(--cor-preta);
+        padding-left: 0;
+    }
+
+    .pad {
+        padding-left: 1em;
+    }
+
+    .principal__profissao {
+    border-bottom: 0.2em solid var(--cor-preta);
+    }
+
+    .principal__container__links {
+        display: flex;
+        justify-content: left;
+        margin: 0;
+    } .principal__link {
+        color: var(--cor-botao);
+        font-size: 1em;
+        text-decoration: none;
+        border: 0.1em solid var(--cor-botao);
+        border-radius: 0.7em;
+        padding: 0.2em;
+        margin: 0.5em 0.2em;
+    }
+
+    .responsivo {
+        display: none;
+    }
+
+    .principal__infos {
+        padding-top: 0;
+    } .principal__container__exp {
+        padding-bottom: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .principal {
+        margin: 0.5em;
+    }
+
+    .principal__texto {
+        font-size: 0.8em;
+    }
+
+    .principal__texto__exp {
+        margin: 0;
+    }
+    
+    .principal__lista__subtitulo {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .principal__lista__info {
+        scale: 0.8;
+    }
+}

@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-fundo: #f9f3de;
+
+    --cor-um: #2D5473;
+    --cor-dois: #5BA7D1;
+    --cor-tres: #bae7ff;
+
+    --cor-link: #00a2ff;
+    --cor-link-c: #c8ebff;
+
+    --cor-fundo-um: rgb(255, 255, 255);
+    --cor-fundo-dois: rgb(222, 222, 222);
+
+    --cor-shadow: #2b2b2b7c;
+    
+
+    --fonte-principal: "Montserrat", sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1vw;
+/* 
+    height: 100vh;
+    overflow: hidden; */
+}
+
+ul {
+    list-style: none;
+}
+
+.titulo_pg {
+    color: var(--cor-dois);
+    border-bottom: 2px solid var(--cor-dois);
+    font-weight: bolder;
+    margin-bottom: 1vw;
+}
+/* CABECALHO */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: fixed;
+}
+
+.cabecalho__botao {
+    color: var(--cor-tres);
+    background-color: var(--cor-um);
+    font-size: 1vw;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    margin: 1vw 1vw;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 0.2vw solid var(--cor-tres);
+    opacity: 0.8;
+} .cabecalho__botao:hover {
+    scale: 1.02;
+    transition: 0.3s;
+    opacity: 1;
+} .cabecalho__botao:active {
+    transition: 0s;
+    color: var(--cor-link-c);
+    border: 0.2vw solid var(--cor-link-c);
+    background-color: var(--cor-link);
+}
+
+/* PAGINA */
+.principal {
+    margin: 2.5vw 10vw 0 10vw;
+    background-color: var(--cor-fundo-um);
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    height: 90vh;
+    box-shadow: 1px 1px 10px var(--cor-shadow), -1px -1px 10px var(--cor-shadow);
+}
+
+/* PARTE 1 */
+.infos {
+    background-color: var(--cor-um);
+    position: absolute;
+    height: 90vh;
+    width: 20vw;
+    z-index: 1;
+}
+
+/* VINICIUS IMAG */
+.infos_img_img {
+    position: absolute;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+    border: 10px solid var(--cor-um);
+    margin: 1vw 0 0 4vw;
+    z-index: 1;
+}
+
+/* INFOS LINK */
+.infos_link {
+    position: relative;
+    display: flex;
+    margin: 20vw 1vw 0 1vw;
+    justify-content: space-between;
+}
+
+.principal__link {
+    color: var(--cor-link);
+    border: 2px solid var(--cor-link);
+    text-decoration: none;
+    padding: 0.3vw;
+    border-radius: 1vw;
+    opacity: 0.9;
+    width: 5.2vw;
+    text-align: center;
+}
+.principal__link:hover {
+    opacity: 1;
+    scale: 1.04;
+}
+.principal__link:active {
+    color: var(--cor-link-c);
+    border: 2px solid var(--cor-link-c);
+}
+
+
+/* CONTATO */
+.infos_ctt {
+    margin: 1vw 1vw 0 1vw;
+    
+}
+.ctt_img {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 100%;
+    margin-bottom: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vw;
+}
+.ctt_item {
+    font-size: 0.85vw;
+    font-weight: 500;
+    color: var(--cor-tres);
+    display: flex;
+    align-items: center;
+}
+
+/* IDIOMAS */
+.infos_idioma {
+    row-gap: 1vw;
+    margin: 1vw 1vw 0 1vw;
+}
+.idiomas_item {
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+.idiomas_lin {
+    font-size: 1vw;
+    color: var(--cor-tres);
+}
+.idiomas_knl {
+    position: relative;
+    color: var(--cor-tres);
+    font-size: 1vw;
+}
+
+.idiomas_bar {
+    background-color: var(--cor-tres);
+    position: absolute;
+    height: 0.25em;
+    width: 90%;
+    border-radius: 5em;
+    margin-top: 1.5em;
+    opacity: 0.2;
+}
+.idiomas_pt {
+    background-color: var(--cor-dois);
+    position: absolute;
+    height: 0.25em;
+    width: 80%;
+    border-radius: 5em;
+    margin-top: 1.5em;
+}
+.idiomas_en {
+    background-color: var(--cor-dois);
+    position: absolute;
+    height: 0.25em;
+    width: 70%;
+    border-radius: 5em;
+    margin-top: 1.5em;
+}
+
+/* NOME */
+.sobre {
+    position: absolute;
+    background-color: var(--cor-fundo-dois);
+    height: 12vw;
+    z-index: 0;
+}
+.sobre_infos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--cor-um);
+    padding: 2vw;
+    margin: 6vw 0 0 20vw;
+    border: 5px solid var(--cor-dois);
+    border-radius:0 5em 5em 0;
+}
+.sobre_nome {
+    font-size: 2vw;
+    color: var(--cor-dois);
+}
+.sobre_subtitulo {
+    font-size: 1vw;
+    color: var(--cor-tres);
+}
+.sobre_sobremim {
+    margin: 2.3vw 5vw 0 46vw;
+    background-color: var(--cor-fundo-dois);
+    padding: 2vw;
+    border-radius:2em;
+    border: 5px solid var(--cor-fundo-um);
+}
+.sobremim_texto {
+    margin-top: 0.5vw;
+    color: var(--cor-um);
+    font-size: 0.8vw;
+}
+
+/* SKILLS */
+.skill {
+    position: relative;
+    margin: 15vw 0 0 21vw;
+    width: 25vw;
+}
+.skills_lista {
+    display: flex;
+    flex-direction: column;
+}
+.skills_listas {
+    display: flex;
+    justify-content: space-between;
+}
+.skills_item {
+    color: var(--cor-um);
+    font-weight: 500;
+    margin-bottom: 0.2vw;
+    font-size: 0.8vw;
+}
+
+/* COURSES */
+.skill_courses {
+    margin: 1vw 0 0 0;
+}
+.courses_item {
+    margin-bottom: 0.5vw;
+}
+.courses_item_titulo {
+    color: var(--cor-um);
+    font-size: 1vw;
+}
+.sabermais {
+    color: var(--cor-link);
+    font-size: 1em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 9vw;
+    opacity: 0.7;
+}
+.sabermais:hover{
+    transform:translateX(4px);
+    opacity: 1;
+}
+.sabermais:active {
+    color: var(--cor-link-c);
+    transition: 0s;
+}
+
+/* EXP */
+.exp {
+    position: relative;
+    margin: 15vw 2vw 1.5vw 1vw;
+    border-left: 2px solid var(--cor-dois);
+    padding-left: 1vw;
+}
+.exp_item {
+    margin-bottom: 0.5vw;
+}
+.exp_item_titulo {
+    font-size: 1vw;
+    color: var(--cor-um);
+}
+.exp_item_cargo {
+    font-size: 0.7vw;
+    color: var(--cor-um);
+    font-weight: 500;
+}
+.popup_data, .data {
+    color: var(--cor-dois);
+    font-weight: 700;
+}
+.edc_item {
+    margin-bottom: 0.5vw;
+}
+
+
+/* POPUP */
+.pop-up {
+    display: grid;
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(20px);
+    padding: 2rem 1rem;
+    place-items: center;
+    z-index: 1000;
+    cursor: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.popup_card {
+    position: relative;
+    background-color: var(--cor-fundo-um);
+    padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2rem;
+    border: 0.4rem solid var(--cor-um);
+    width: 30rem;
+    height: 35rem;
+    transform: scale(0.7);
+    margin-top: -5em;
+}
+
+.popup_close {
+    color: var(--cor-um);
+    font-size: 2rem;
+    border-radius: 50em;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 23.5rem;
+    margin-top: -3rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2000;
+    opacity: 0.6;
+}
+.popup_close:hover {
+    opacity: 1;
+}
+.popup_close:active {
+    color: var(--cor-dois);
+}
+.popup_titulo{
+    color: var(--cor-dois);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin: 0 0 1.5rem 0;
+}
+.popup_subtitulo {
+    color: var(--cor-um);
+    text-align: center;
+    font-size: 1.1rem;
+    margin: -1vw 0 2vw 0;
+}
+.popup_lista {
+    list-style: none;
+} 
+.popup_item span {
+    color: var(--cor-dois);
+    margin-right: 1rem;
+}
+.popup_item span, .popup_item {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.popup_item {
+    color: var(--cor-um);
+    font-weight: 500;
+}
+.pdf {
+    color: var(--cor-link);
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 0.7em;
+    border: 3px solid var(--cor-link);
+    padding: 0.1em;
+    opacity: 0.7;
+}
+.pdf:hover {
+    opacity: 1;
+}
+.pdf:active {
+    color: var(--cor-link-c);
+    border: 3px solid var(--cor-link-c);
+}
+/* ATIVAR POP-UP */
+.pop-up.active-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}

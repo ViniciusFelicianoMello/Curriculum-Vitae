@@ -79,6 +79,7 @@ ul {
 .principal {
     margin: 2.5vw 10vw 0 10vw;
     background-color: var(--cor-fundo-um);
+    height: 90vh;
     
 }
 
@@ -87,6 +88,7 @@ ul {
     display: flex;
     height: 90vh;
     box-shadow: 1px 1px 10px var(--cor-shadow), -1px -1px 10px var(--cor-shadow);
+    height: 90vh;
 }
 
 /* PARTE 1 */
@@ -443,10 +445,12 @@ ul {
     /* PAGINA */
     .principal {
         margin: 6vw 4vw 0 10vw;
+        height: 90vh;
     }
     
     .container {
         flex-direction: column;
+        height: 90vh;
     }
     
     /* PARTE 1 */
@@ -615,14 +619,13 @@ ul {
     .popup_card {
         scale: 1.5;
     }
+    .pdf {
+        font-size: 3em;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        width: 100vw;
-    }
-
-    .titulo_pg {
+ .titulo_pg {
         font-weight: bolder;
         margin-bottom: 1vw;
         font-size: 3vw;
@@ -833,5 +836,8 @@ ul {
     .popup_card {
         scale: 1;
         position: absolute;
+    }
+    .pdf {
+        font-size: 8em;
     }
 }

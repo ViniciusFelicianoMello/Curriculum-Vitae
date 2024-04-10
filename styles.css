@@ -43,6 +43,7 @@ ul {
     border-bottom: 2px solid var(--cor-dois);
     font-weight: bolder;
     margin-bottom: 1vw;
+    font-size: 1.2vw;
 }
 /* CABECALHO */
 .cabecalho {
@@ -114,6 +115,7 @@ ul {
     display: flex;
     margin: 20vw 1vw 0 1vw;
     justify-content: space-between;
+    font-weight: bolder;
 }
 
 .principal__link {
@@ -180,7 +182,7 @@ ul {
 .idiomas_bar {
     background-color: var(--cor-tres);
     position: absolute;
-    height: 0.25em;
+    height: 0.40em;
     width: 90%;
     border-radius: 5em;
     margin-top: 1.5em;
@@ -189,7 +191,7 @@ ul {
 .idiomas_pt {
     background-color: var(--cor-dois);
     position: absolute;
-    height: 0.25em;
+    height: 0.40em;
     width: 80%;
     border-radius: 5em;
     margin-top: 1.5em;
@@ -197,7 +199,7 @@ ul {
 .idiomas_en {
     background-color: var(--cor-dois);
     position: absolute;
-    height: 0.25em;
+    height: 0.40em;
     width: 70%;
     border-radius: 5em;
     margin-top: 1.5em;
@@ -415,4 +417,421 @@ ul {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .titulo_pg {
+        font-weight: bolder;
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    }
+    /* CABECALHO */    
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        transform: rotate(-90deg);
+        margin: 100vw 0 0 -10vw;
+    }
+    .cabecalho__botao {
+        font-size: 3vw;
+        margin: 0 2vw 0 0;
+        padding: 1;
+    }
+    
+    /* PAGINA */
+    .principal {
+        margin: 6vw 4vw 0 10vw;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    /* PARTE 1 */
+    .infos {
+        height: 18vh;
+        width: 100%;
+        z-index: 0;
+    }
+    
+    /* VINICIUS IMAG */
+    .infos_img_img {
+        width: 25vw;
+        height: 25vw;
+        margin: 2vw 0 0 4vw;
+    }
+    
+    /* INFOS LINK */
+    
+    .infos_link {
+        display: flex;
+        margin: 8vw 0 0 28vw;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    
+    .principal__link {
+        padding: 1vw;
+        border-radius: 2vw;
+        width: 9vw;
+    }
+    
+    
+    /* CONTATO */
+    .infos_ctt {
+        margin: 3vw 1vw 0 63vw; 
+        scale: 1.2;
+    }
+    
+    /* IDIOMAS */
+    .infos_idioma {
+        row-gap: 1vw;
+        margin: 6.4vw 1vw 0 63.3vw;
+        width: 20vw;
+        height: 20vw;
+        background-color: var(--cor-fundo-dois);
+        border-radius: 2vw;
+        padding: 2vw;
+    }
+    .idiomas_lin {
+        font-size: 1.3vw;
+        color: var(--cor-um);
+    }
+    .idiomas_knl {
+        color: var(--cor-um);
+        font-size: 1.3vw;
+    }
+    
+    .idiomas_bar {
+        background-color: var(--cor-tres);
+        height: 0.50em;
+        width: 19%;
+        border-radius: 5em;
+        margin-top: 2em;
+        opacity: 1;
+    }
+    .idiomas_pt {
+        background-color: var(--cor-dois);
+        position: absolute;
+        height: 0.50em;
+        width: 17%;
+        border-radius: 5em;
+        margin-top: 2em;
+    }
+    .idiomas_en {
+        background-color: var(--cor-dois);
+        position: absolute;
+        height: 0.50em;
+        width: 15.5%;
+        border-radius: 5em;
+        margin-top: 2em;
+    }
+    
+    /* NOME */
+    .sobre {
+        height: 0;
+        background-color: transparent;
+    }
+    .sobre_infos {
+        background-color:transparent;
+        margin: 14vw 0 0 30vw;
+        padding: 0 0 1vw 0;
+        border: none;
+        border-bottom: 2px solid var(--cor-dois);
+        border-radius:0;
+        scale: 1.1;
+    }
+    .sobre_nome {
+        font-size: 3.5vw;
+    }
+    .sobre_subtitulo {
+        font-size: 1.2vw;
+    }
+    .sobre_sobremim {
+        margin: 28vw 25vw 0 2vw;
+        height: 21vw;
+    }
+    .sobremim_texto {
+        font-size: 1.75vw;
+    }
+    
+    /* SKILLS */
+    .skill {
+        display: flex;
+        margin: 50vw 0 0 3vw;
+        width: 80.5vw;
+        justify-content: space-between;
+    }
+    .skill_skills {
+        height: 20vw;
+        width: 38vw;
+    }
+    .skills_item {
+        color: var(--cor-um);
+        font-weight: 500;
+        margin-bottom: 0.2vw;
+        font-size: 2vw;
+    }
+    
+    /* COURSES */
+    .skill_courses {
+        margin: 0 0 0 0;
+        height: 20vw;
+        width: 38vw;
+    }
+    .courses_item_titulo {
+        font-size: 1.5vw;
+    }
+    .sabermais {
+        font-size: 1.4em;
+        width: 15vw;
+    }
+    
+    /* EXP */
+    .exp {
+        position: relative;
+        margin: 2vw 2vw 1.5vw 3vw;
+        border-left: none;
+        padding-left: 0;
+    }
+    .exp_item_titulo {
+        font-size: 1.4vw;
+        color: var(--cor-um);
+    }
+    .exp_item_cargo {
+        font-size: 1.2vw;
+        color: var(--cor-um);
+        font-weight: 500;
+    }
+    .popup_data, .data {
+        color: var(--cor-dois);
+        font-weight: 700;
+    }
+    .edc_item {
+        margin-bottom: 0.5vw;
+    }
+    .popup_card {
+        scale: 1.5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100vw;
+    }
+
+    .titulo_pg {
+        font-weight: bolder;
+        margin-bottom: 1vw;
+        font-size: 3vw;
+    }
+    /* CABECALHO */    
+    
+    /* PAGINA */
+    .principal {
+        margin: 6vw 4vw 0 10vw;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    /* PARTE 1 */
+    .infos {
+        height: 18vh;
+        width: 100%;
+        z-index: 0;
+    }
+    
+    /* VINICIUS IMAG */
+    .infos_img_img {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vw 0 0 0vw;
+        z-index: 2;
+    }
+    
+    /* INFOS LINK */    
+    .infos_link {
+        display: flex;
+        margin: 2vw 0 0 29vw;
+        justify-content: space-between;
+        width: 50vw;
+    }
+    
+    .principal__link {
+        padding: 1vw;
+        border-radius: 2vw;
+        width: 15vw;
+        font-size: 2vw;
+    }
+    
+    
+    /* CONTATO */
+    .infos_ctt {
+        position: relative;
+        margin: 13vw 1vw 0 26.5vw; 
+        scale: 1.9;
+        z-index: 5;
+        width: 30%;
+    }
+    .ctt_img {
+        height: 1.5vw;
+        width: 1.5vw;
+        border-radius: 100%;
+        margin-bottom: 0.5vw;
+        margin-right: 0.5vw;
+        margin-top: 0.5vw;
+    }
+    .ctt_lista {
+        width: 30%;
+        white-space: nowrap;
+        margin-left: 7vw;
+    }
+    .ctt_item {
+        font-size: 0.85vw;
+        font-weight: 500;
+        width: 50%;
+        color: var(--cor-tres);
+        display: flex;
+        align-items: center;
+    }
+    
+    /* IDIOMAS */
+    .infos_idioma {
+        row-gap: 1vw;
+        margin: -19.5vw 1vw 0 63.3vw;
+        width: 20vw;
+        height: 20vw;
+        background-color: transparent;
+        padding: 0;
+    }
+    .idiomas_lin {
+        font-size: 2.2vw;
+        color: var(--cor-tres);
+    }
+    .idiomas_knl {
+        color: var(--cor-tres);
+        font-size: 2.2vw;
+    }
+    
+    .idiomas_bar {
+        background-color: var(--cor-tres);
+        height: 0.50em;
+        width: 23%;
+        border-radius: 5em;
+        margin-top: 3em;
+        opacity: 0.2;
+    }
+    .idiomas_pt {
+        background-color: var(--cor-dois);
+        position: absolute;
+        height: 0.50em;
+        width: 20%;
+        border-radius: 5em;
+        margin-top: 3em;
+    }
+    .idiomas_en {
+        background-color: var(--cor-dois);
+        position: absolute;
+        height: 0.50em;
+        width: 18%;
+        border-radius: 5em;
+        margin-top: 3em;
+    }
+    
+    /* NOME */
+    .sobre {
+        height: 0;
+        background-color: transparent;
+    }
+    .sobre_infos {
+        background-color:transparent;
+        margin: 9vw 0 0 32.5vw;
+        padding: 0 0 1vw 0;
+        border: none;
+        border-bottom: 2px solid var(--cor-dois);
+        border-radius:0;
+        scale: 1.3;
+    }
+    .sobre_nome {
+        font-size: 3.5vw;
+    }
+    .sobre_subtitulo {
+        font-size: 1.2vw;
+    }
+    .sobre_sobremim {
+        margin: 32svw 2vw 0 2vw;
+        height: 28vw;
+        width: 81.5vw;
+    }
+    .sobremim_texto {
+        font-size: 2.3vw;
+    }
+    
+    /* SKILLS */
+    .skill {
+        display: flex;
+        margin: 60vw 0 0 3vw;
+        width: 80.5vw;
+        justify-content: space-between;
+    }
+    .skill_skills {
+        height: 30vw;
+        width: 38vw;
+    }
+    .skills_item {
+        color: var(--cor-um);
+        font-weight: 500;
+        margin-bottom: 0.2vw;
+        font-size: 2vw;
+    }
+    
+    /* COURSES */
+    .skill_courses {
+        margin: 0 0 0 0;
+        height: 20vw;
+        width: 38vw;
+    }
+    .courses_item_titulo {
+        font-size: 2.2vw;
+    }
+    .sabermais {
+        font-size: 2em;
+        width: 15vw;
+    }
+    
+    /* EXP */
+    .exp {
+        position: relative;
+        margin: 2vw 2vw 1.5vw 3vw;
+        border-left: none;
+        padding-left: 0;
+    }
+    .exp_item_titulo {
+        font-size: 2.5vw;
+        color: var(--cor-um);
+    }
+    .exp_item_cargo {
+        font-size: 1.8vw;
+        color: var(--cor-um);
+        font-weight: 500;
+    }
+    .popup_data, .data {
+        color: var(--cor-dois);
+        font-weight: 700;
+    }
+    .edc_item {
+        margin-bottom: 0.5vw;
+    }
+/* POPUP */
+    .pop-up {
+        padding: 2rem 1rem;
+    }
+    .popup_card {
+        scale: 1;
+        position: absolute;
+    }
 }

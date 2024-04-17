@@ -25,6 +25,19 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor-um); 
+    border-radius: 20px;;
+  }
+
 body {
     background-color: var(--cor-fundo);
     font-family: var(--fonte-principal);
@@ -258,6 +271,8 @@ ul {
 .skills_listas {
     display: flex;
     justify-content: space-between;
+    height: 12vh;
+    overflow: scroll;
 }
 .skills_item {
     color: var(--cor-um);
@@ -269,6 +284,11 @@ ul {
 /* COURSES */
 .skill_courses {
     margin: 1vw 0 0 0;
+    height: 40vh;
+}
+.courses_lista {
+    height: 32vh;
+    overflow: scroll;
 }
 .courses_item {
     margin-bottom: 0.5vw;
@@ -572,6 +592,9 @@ ul {
         height: 20vw;
         width: 38vw;
     }
+    .skills_listas {
+        height: 14vh;
+    }    
     .skills_item {
         color: var(--cor-um);
         font-weight: 500;
@@ -584,6 +607,9 @@ ul {
         margin: 0 0 0 0;
         height: 20vw;
         width: 38vw;
+    }
+    .courses_lista {
+        height: 14vh;
     }
     .courses_item_titulo {
         font-size: 1.5vw;

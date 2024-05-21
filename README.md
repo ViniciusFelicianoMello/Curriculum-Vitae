@@ -1,6 +1,6 @@
 <div id="home" align="center">  
   <a href="https://curriculum-vitae-vinicius.vercel.app/" target="_blank">
-    <img src="img/Curriculo.png" alt="Logo" width="80" height="80">
+    <img src="assets/curriculo.png" alt="Logo" width="80" height="80">
   </a>
   
   <h1>Curriculo</h1>
@@ -23,7 +23,7 @@
 </div>
 
 <h2 id="about">🔍 Sobre</h2>
-<img src="img/CurriculoBG.png" alt="backgorund" width="auto" height="auto">
+<img src="assets/CurriculoBG.png" alt="backgorund" width="auto" height="auto">
 
 <p>Projeto realizado para apresentação de curriculo<p>
 <p>O projeto consiste em uma página interativa com meu currículo, onde apresento diversas informações. Você encontrará links para o meu LinkedIn, GitHub e Instagram, além de detalhes como nome, email, contato, profissão, localização, idiomas, habilidades, cursos extracurriculares, uma seção sobre mim, experiências e escolaridade. A página também possui interações com modais, a opção de alternar entre os idiomas inglês e português, e a possibilidade de baixar o currículo em PDF para visualização ou impressão.<p>

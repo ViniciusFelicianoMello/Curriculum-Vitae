@@ -367,6 +367,8 @@ ul {
     height: 35rem;
     transform: scale(0.7);
     margin-top: -5em;
+
+    overflow: scroll;
 }
 
 .popup_close {
